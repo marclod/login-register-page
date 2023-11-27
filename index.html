@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login e Registro</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+
+        <div class="card">
+            <div class="card-front" id="front">
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                    <br>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <br>
+                    <button type="button" id="loginBtn">Login</button>
+                    <p class="dont-have-account">Don't have an account? <a href="#" id="showRegisterBtn">Sign up</a></p>
+                </form>
+            </div>
+            <div class="card-back" id="back">
+                <h2>Register</h2>
+                <form id="registerForm">
+                    <label for="newUsername">New Username:</label>
+                    <input type="text" id="newUsername" name="newUsername" required>
+                    <br>
+                    <label for="newPassword">New Password:</label>
+                    <input type="password" id="newPassword" name="newPassword" required>
+                    <br>
+                    <button type="button" id="registerBtn">Register</button>
+                    <p class="dont-have-account">Already have an account? <a href="#" id="showLoginBtn">Sign in</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
